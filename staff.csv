@@ -1,0 +1,11 @@
+staff_id,name,skills,available_days,max_shifts,max_nights
+S01,Asha,Nurse|ICU,Mon|Tue|Wed|Thu|Fri|Sat|Sun,5,2
+S02,Rahul,Nurse|Emergency,Mon|Tue|Wed|Thu|Fri|Sat|Sun,5,2
+S03,Meera,Nurse|ICU,Mon|Tue|Wed|Thu|Fri|Sat|Sun,5,2
+S04,Arjun,Nurse|Emergency,Mon|Tue|Wed|Thu|Fri|Sat|Sun,5,2
+S05,Kavya,Nurse|General,Mon|Tue|Wed|Thu|Fri|Sat|Sun,5,2
+S06,Vikram,Nurse|General,Mon|Tue|Wed|Thu|Fri|Sat|Sun,5,2
+S07,Imran,Nurse|ICU|Emergency,Mon|Tue|Wed|Thu|Fri|Sat|Sun,5,2
+S08,Diya,Nurse|General,Mon|Tue|Wed|Thu|Fri|Sat|Sun,5,2
+S09,Neel,Nurse|Emergency,Mon|Tue|Wed|Thu|Fri|Sat|Sun,5,2
+S10,Priya,Nurse|ICU,Mon|Tue|Wed|Thu|Fri|Sat|Sun,5,2

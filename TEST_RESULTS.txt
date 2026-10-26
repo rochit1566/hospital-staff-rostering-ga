@@ -1,0 +1,91 @@
+UNIT TEST COMMAND: python -m unittest discover -s tests -v
+Exit code: 0
+
+STDOUT:
+
+STDERR:
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 718, in _warm_feature_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 509, in _warm_drawing_and_image_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/generated/interface/models.py", line 32861, in bring_to_front
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/remote.py", line 764, in __call__
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/client.py", line 175, in call
+artifact_tool.rpc.client.RemoteError: Element ordering requires an owning element collection.
+test_ga_returns_all_required_roster_rows (test_scheduler.SchedulerTests.test_ga_returns_all_required_roster_rows) ... ok
+test_sample_requirements_have_expected_slot_count (test_scheduler.SchedulerTests.test_sample_requirements_have_expected_slot_count) ... ok
+test_staff_skills_are_parsed (test_scheduler.SchedulerTests.test_staff_skills_are_parsed) ... ok
+test_validator_detects_unfilled_slot (test_scheduler.SchedulerTests.test_validator_detects_unfilled_slot) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.100s
+
+OK
+
+
+CLI RUN COMMAND: python ga_scheduler.py
+Exit code: 0
+
+STDOUT (first 12000 chars):
+=== Hospital Staff Rostering Using Genetic Algorithm ===
+Fitness score: 1.28
+Unfilled/constraint violations: 0
+Roster saved to: /mnt/data/hospital_staff_rostering_ga/roster_output.csv
+Day   Shift Shift ID Required Skill  Slot Staff ID Staff Name Start  Duration (hours) Night Shift
+Mon     Day        D          Nurse     1      S09       Neel 07:00                 8          No
+Mon     Day        D          Nurse     2      S04      Arjun 07:00                 8          No
+Mon Evening        E          Nurse     1      S07      Imran 15:00                 8          No
+Mon Evening        E          Nurse     2      S10      Priya 15:00                 8          No
+Mon   Night        N          Nurse     1      S06     Vikram 23:00                 8         Yes
+Mon   Night        N          Nurse     2      S03      Meera 23:00                 8         Yes
+Tue     Day        D          Nurse     1      S08       Diya 07:00                 8          No
+Tue     Day        D          Nurse     2      S01       Asha 07:00                 8          No
+Tue Evening        E          Nurse     1      S09       Neel 15:00                 8          No
+Tue Evening        E          Nurse     2      S05      Kavya 15:00                 8          No
+Tue   Night        N          Nurse     1      S10      Priya 23:00                 8         Yes
+Tue   Night        N          Nurse     2      S02      Rahul 23:00                 8         Yes
+Wed     Day        D          Nurse     1      S08       Diya 07:00                 8          No
+Wed     Day        D          Nurse     2      S06     Vikram 07:00                 8          No
+Wed Evening        E          Nurse     1      S09       Neel 15:00                 8          No
+Wed Evening        E          Nurse     2      S04      Arjun 15:00                 8          No
+Wed   Night        N          Nurse     1      S01       Asha 23:00                 8         Yes
+Wed   Night        N          Nurse     2      S02      Rahul 23:00                 8         Yes
+Thu     Day        D          Nurse     1      S07      Imran 07:00                 8          No
+Thu     Day        D          Nurse     2      S10      Priya 07:00                 8          No
+Thu Evening        E          Nurse     1      S06     Vikram 15:00                 8          No
+Thu Evening        E          Nurse     2      S05      Kavya 15:00                 8          No
+Thu   Night        N          Nurse     1      S08       Diya 23:00                 8         Yes
+Thu   Night        N          Nurse     2      S03      Meera 23:00                 8         Yes
+Fri     Day        D          Nurse     1      S01       Asha 07:00                 8          No
+Fri     Day        D          Nurse     2      S09       Neel 07:00                 8          No
+Fri Evening        E          Nurse     1      S07      Imran 15:00                 8          No
+Fri Evening        E          Nurse     2      S02      Rahul 15:00                 8          No
+Fri   Night        N          Nurse     1      S05      Kavya 23:00                 8         Yes
+Fri   Night        N          Nurse     2      S04      Arjun 23:00                 8         Yes
+Sat     Day        D          Nurse     1      S08       Diya 07:00                 8          No
+Sat     Day        D          Nurse     2      S10      Priya 07:00                 8          No
+Sat Evening        E          Nurse     1      S03      Meera 15:00                 8          No
+Sat Evening        E          Nurse     2      S01       Asha 15:00                 8          No
+Sat   Night        N          Nurse     1      S05      Kavya 23:00                 8         Yes
+Sat   Night        N          Nurse     2      S07      Imran 23:00                 8         Yes
+Sun     Day        D          Nurse     1      S02      Rahul 07:00                 8          No
+Sun     Day        D          Nurse     2      S04      Arjun 07:00                 8          No
+Sun Evening        E          Nurse     1      S06     Vikram 15:00                 8          No
+Sun Evening        E          Nurse     2      S03      Meera 15:00                 8          No
+Sun   Night        N          Nurse     1      S09       Neel 23:00                 8         Yes
+Sun   Night        N          Nurse     2      S07      Imran 23:00                 8         Yes
+
+STDERR:
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 718, in _warm_feature_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 509, in _warm_drawing_and_image_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/generated/interface/models.py", line 32861, in bring_to_front
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/remote.py", line 764, in __call__
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/client.py", line 175, in call
+artifact_tool.rpc.client.RemoteError: Element ordering requires an owning element collection.
+
